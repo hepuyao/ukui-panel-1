@@ -275,10 +275,14 @@ UKUIPanel::UKUIPanel(const QString &configGroup, UKUi::Settings *settings, QWidg
             this->update();
         }
     });
+#if 0
+    int panel_size= gsettings->get(PANEL_SIZE_KEY).toInt();
     setPanelsize(PANEL_SIZE_MEDIUM);
-    setIconsize(ICON_SIZE_MEDIUM);
+    //setIconsize(ICON_SIZE_MEDIUM);
     setPanelsize(PANEL_SIZE_SMALL);
-    setIconsize(ICON_SIZE_SMALL);
+    //setIconsize(ICON_SIZE_SMALL);
+    setPanelsize(panel_size);
+#endif
 }
 
 /************************************************
