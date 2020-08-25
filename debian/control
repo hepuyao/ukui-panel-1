@@ -6,6 +6,7 @@ Uploaders: Aron Xu <aron@debian.org>,
            handsome_feng <jianfengli@ubuntukylin.com>
 Build-Depends: debhelper-compat (= 12),
                cmake,
+               glibc,
                libasound2-dev,
                libdbusmenu-qt5-dev,
                libglib2.0-dev(>=2.36),
